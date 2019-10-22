@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/note"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/incorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Username Or Password"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_below="@+id/incorrect"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="Show Password"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check"
+        android:text="Login"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_light"
+        />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Register Here!"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:clickable="true"
+        />
+
+
+
+</RelativeLayout>

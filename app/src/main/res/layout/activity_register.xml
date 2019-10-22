@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/reg_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/note"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_logo"
+        android:hint="User Name"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_username"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/reg_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_password"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/password_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password Hint"
+        android:layout_below="@+id/reg_password_confirm"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_hint"
+        android:text="Register"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_light"/>
+
+</RelativeLayout>

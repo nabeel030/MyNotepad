@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".EditNote">
+
+    <EditText
+        android:id="@+id/get_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title here"
+        android:enabled="false"
+        />
+
+    <EditText
+        android:id="@+id/get_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note here"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/title"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Edit"
+        android:background="@android:color/holo_green_light"
+        />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Update"
+        android:background="@android:color/holo_blue_light"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>

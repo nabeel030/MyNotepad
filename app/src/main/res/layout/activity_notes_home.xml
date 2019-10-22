@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".NotesHome">
+
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Notes"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/recent"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="No Notes Yet"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recent"
+        android:layout_marginTop="20dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/write"
+        android:layout_width="121dp"
+        android:layout_height="87dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_add_black_24dp"
+
+        />
+
+</RelativeLayout>
